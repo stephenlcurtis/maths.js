@@ -1,4 +1,8 @@
-import {DECIMALS, add, subtract, multiply, divide} from '../src/maths.js';
+import DECIMALS from "./defaultDecimals";
+import add from "./add";
+import subtract from "./subtract";
+import multiply from "./multiply";
+import divide from "./divide";
 import {expect} from 'chai';
 import rp from 'request-promise';
 import {DOMParser} from 'xmldom';

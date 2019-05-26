@@ -1,4 +1,7 @@
 {
+  "name": "maths",
+  "version": "1.0.0",
+  "main": "maths.js",
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-eslint": "^7.2.3",
@@ -11,7 +14,7 @@
     "eslint": "^4.1.1",
     "eslint-loader": "^1.9.0",
     "html-webpack-plugin": "^2.29.0",
-    "mocha": "^3.5.0",
+    "mocha": "^6.1.4",
     "request": "^2.81.0",
     "request-promise": "^4.2.1",
     "webpack": "^3.1.0",

@@ -1,4 +1,14 @@
-import {DECIMALS, add, subtract, multiply, divide, pow, e2, e3, inv, neg, delta} from '../src/maths.js';
+import DECIMALS from "./defaultDecimals";
+import add from "./add";
+import subtract from "./subtract";
+import multiply from "./multiply";
+import divide from "./divide";
+import pow from "./pow";
+import e2 from "./e2";
+import e3 from "./e3";
+import inv from "./inv";
+import neg from "./neg";
+import delta from "./delta";
 import {expect} from 'chai';
 import {Promise} from 'bluebird';
 
