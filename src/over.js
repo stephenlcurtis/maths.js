@@ -1,7 +1,7 @@
-import curry from "./curry";
-import smallifyFromInt from "./smallifyFromInt";
-import bigifyToInt from "./bigifyToInt";
-import precise from "./precise";
+import curry from './curry';
+import smallifyFromInt from './smallifyFromInt';
+import bigifyToInt from './bigifyToInt';
+import precise from './precise';
 
 /**
  * Returns quotient of given arguments to a specified accuracy.

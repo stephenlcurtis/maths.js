@@ -1,5 +1,5 @@
-import decimalify from "./decimalify";
-import over from "./over";
+import decimalify from './decimalify';
+import over from './over';
 
 /**
  * Maintain decimal accuracy while performing division operation, correcting for floating point arithmetic errors.

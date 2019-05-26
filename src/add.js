@@ -1,5 +1,5 @@
-import decimalify from "./decimalify";
-import plus from "./plus";
+import decimalify from './decimalify';
+import plus from './plus';
 
 /**
  * Maintain decimal accuracy while performing addition operation, correcting for floating point arithmetic errors.

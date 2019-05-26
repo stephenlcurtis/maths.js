@@ -1,4 +1,4 @@
-import Decimals from "./decimals";
+import Decimals from './decimals';
 
 /**
  * Finds {@link Maths#Decimals} in arguments and prepends to front of arguments list.

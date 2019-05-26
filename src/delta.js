@@ -1,5 +1,5 @@
-import curry from "./curry";
-import minus from "./minus";
+import curry from './curry';
+import minus from './minus';
 
 /**
  * Get the change (delta) between two values.

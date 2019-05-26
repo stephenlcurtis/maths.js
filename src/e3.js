@@ -1,5 +1,5 @@
-import curry from "./curry";
-import exp from "./exp";
+import curry from './curry';
+import exp from './exp';
 
 /**
  * Get the cube of a given value.
