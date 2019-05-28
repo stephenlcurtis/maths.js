@@ -1,6 +1,6 @@
-import curry from './curry';
-import smallifyFromInt from './smallifyFromInt';
-import bigifyToInt from './bigifyToInt';
+import { curry } from './curry';
+import { smallifyFromInt } from './smallifyFromInt';
+import { bigifyToInt } from './bigifyToInt';
 
 /**
  * Returns sum of given arguments to a specified accuracy.

@@ -1,5 +1,5 @@
-import curry from './curry';
-import times from './times';
+import { curry } from './curry';
+import { times } from './times';
 
 /**
  * Get the negative of a given value.

@@ -1,4 +1,4 @@
-import DECIMALS from './defaultDecimals';
+import { DECIMALS } from './defaultDecimals';
 
 /**
  * Move the decimal point to the left based on a given number of decimal places.

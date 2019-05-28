@@ -1,5 +1,5 @@
-import smallify from './smallify';
-import parseIntUnary from './parseIntUnary';
+import { smallify } from './smallify';
+import { parseIntUnary } from './parseIntUnary';
 
 /**
  * Parses result of {@link Maths#smallify} as an integer.

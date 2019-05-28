@@ -1,6 +1,5 @@
-import curry from './curry';
-import precise from './precise';
-
+import { curry } from './curry';
+import { precise } from './precise';
 /**
  * Returns power of given arguments to a specified accuracy.
  * @param {number} [decimals]

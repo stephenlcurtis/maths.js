@@ -1,5 +1,5 @@
-import decimalify from './decimalify';
-import times from './times';
+import { decimalify } from './decimalify';
+import { times } from './times';
 
 /**
  * Maintain decimal accuracy while performing multiplication operation, correcting for floating point arithmetic errors.

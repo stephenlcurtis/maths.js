@@ -1,5 +1,5 @@
-import bigify from './bigify';
-import parseIntUnary from './parseIntUnary';
+import { bigify } from './bigify';
+import { parseIntUnary } from './parseIntUnary';
 
 /**
  * Parses result of {@link Maths#bigify} as an integer.

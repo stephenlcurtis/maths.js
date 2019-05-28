@@ -1,24 +1,31 @@
 {
   "name": "maths",
   "version": "1.0.0",
-  "main": "maths.js",
+  "description": "maths.js",
+  "author": "Stephen Curtis",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stephenthecurt/maths.js.git"
+  },
   "devDependencies": {
-    "babel-core": "^6.25.0",
-    "babel-eslint": "^7.2.3",
-    "babel-loader": "^7.1.1",
-    "babel-polyfill": "^6.23.0",
-    "babel-preset-env": "^1.6.0",
-    "babel-register": "^6.24.1",
-    "bluebird": "^3.5.0",
-    "chai": "^4.1.1",
-    "eslint": "^4.1.1",
-    "eslint-loader": "^1.9.0",
-    "html-webpack-plugin": "^2.29.0",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "bluebird": "^3.5.5",
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-loader": "^2.1.2",
+    "html-webpack-plugin": "^3.2.0",
     "mocha": "^6.1.4",
-    "request": "^2.81.0",
-    "request-promise": "^4.2.1",
-    "webpack": "^3.1.0",
-    "webpack-dev-server": "^2.5.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1",
     "xml2js-es6-promise": "^1.1.1",
     "xmldom": "^0.1.27"
   },
@@ -29,5 +36,6 @@
     "start": "webpack-dev-server --hot --inline",
     "test": "mocha test/* --recursive --compilers js:babel-register --require babel-polyfill"
   },
-  "dependencies": {}
+  "main": "maths.js",
+  "license": "ISC"
 }

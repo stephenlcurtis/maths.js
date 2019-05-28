@@ -2,7 +2,7 @@ export { Decimals } from './src/decimals';
 export { DECIMALS } from './src/defaultDecimals';
 export { Sign } from './src/sign';
 export { compose } from './src/compose';
-export { pipe } from './src/compose';
+export { pipe } from './src/pipe';
 export { curry } from './src/curry';
 export { parseIntUnary } from './src/parseIntUnary';
 export { bigify } from './src/bigify';

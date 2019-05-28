@@ -1,5 +1,5 @@
-import decimalify from './decimalify';
-import exp from './exp';
+import { decimalify } from './decimalify';
+import { exp } from './exp';
 
 /**
  * Maintain decimal accuracy while performing power operation.

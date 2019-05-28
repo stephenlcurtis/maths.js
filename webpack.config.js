@@ -7,15 +7,25 @@ var dir_dist = path.resolve(__dirname, 'dist');
 module.exports = {
     entry: path.resolve('maths.js'),
     output: {
-        filename: 'maths.js',
+        filename: 'app.bundle.js',
         path: dir_dist
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: dir_js,
                 exclude: /node_modules/,
-                loader: ['babel-loader', 'eslint-loader']
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
+                }
+            },
+            {
+                test: dir_js,
+                exclude: /node_modules/,
+                loader: ['eslint-loader']
             }
         ]
     },
@@ -24,8 +34,12 @@ module.exports = {
             title: 'maths.js'
         })
     ],
+    stats: {
+        colors: true
+    },
+    mode: 'none',
     devtool: 'source-map',
     devServer: {
-        contentBase: dir_dist,
+        contentBase: dir_dist
     },
 };

@@ -1,5 +1,5 @@
-import smallifyFromInt from './smallifyFromInt';
-import bigifyToInt from './bigifyToInt';
+import { smallifyFromInt } from './smallifyFromInt';
+import { bigifyToInt } from './bigifyToInt';
 
 /**
  * Returns given value to specified decimal accuracy.

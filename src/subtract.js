@@ -1,5 +1,5 @@
-import decimalify from './decimalify';
-import minus from './minus';
+import { decimalify } from './decimalify';
+import { minus } from './minus';
 
 /**
  * Maintain decimal accuracy while performing subtraction operation, correcting for floating point arithmetic errors.

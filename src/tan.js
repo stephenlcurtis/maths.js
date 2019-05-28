@@ -1,5 +1,5 @@
-import curry from './curry';
-import precise from './precise';
+import { curry } from './curry';
+import { precise } from './precise';
 
 /**
  * Maintain decimal accuracy while performing tangent operation.
