@@ -1,4 +1,5 @@
 import { bigify } from './bigify';
+import { pipe } from './pipe';
 import { parseIntUnary } from './parseIntUnary';
 
 /**
