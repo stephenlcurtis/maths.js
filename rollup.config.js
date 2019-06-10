@@ -6,7 +6,7 @@ export default [
     {
         input: 'maths.js',
         output: {
-            name: 'maths',
+            name: 'kova',
             file: pkg.browser,
             format: 'umd'
         },

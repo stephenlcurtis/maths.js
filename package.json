@@ -1,19 +1,19 @@
 {
-  "name": "maths",
+  "name": "kova",
   "version": "1.0.0",
   "description": "Super light weight math library designed for writing complex but readable equations.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stephenthecurt/maths.js.git"
+    "url": "https://github.com/stephenthecurt/kova.git"
   },
   "author": "Stephen Curtis",
   "contributors": [
     "Lauren Pease <lauren@laurenpease.com>"
   ],
   "license": "MIT",
-  "main": "dist/maths.cjs.js",
-  "module": "dist/maths.esm.js",
-  "browser": "dist/maths.umd.js",
+  "main": "dist/kova.cjs.js",
+  "module": "dist/kova.esm.js",
+  "browser": "dist/kova.umd.js",
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
