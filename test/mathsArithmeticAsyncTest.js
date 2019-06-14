@@ -1,8 +1,12 @@
-import {DECIMALS, add, subtract, multiply, divide} from '../src/maths.js';
+import { DECIMALS } from './defaultDecimals';
+import { add } from './add';
+import { subtract } from './subtract';
+import { multiply } from './multiply';
+import { divide } from './divide';
 import {expect} from 'chai';
 import rp from 'request-promise';
-import {DOMParser} from 'xmldom';
-import {Promise} from 'bluebird';
+import { DOMParser } from 'xmldom';
+import { Promise } from 'bluebird';
 
 //digits after decimal point + 1 for one's place
 const precision = DECIMALS + 1;
