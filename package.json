@@ -1,10 +1,10 @@
 {
-  "name": "kova",
+  "name": "kova.js",
   "version": "1.0.0",
   "description": "Super light weight math library designed for writing complex but readable equations.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stephenthecurt/kova.git"
+    "url": "https://github.com/stephenthecurt/kova.js.git"
   },
   "author": "Stephen Curtis",
   "contributors": [
