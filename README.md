@@ -29,4 +29,4 @@ Super light weight math library designed for writing complex but readable equati
         <pre>import { add } from 'kova.js';</pre>
 
 * **I want to support all browsers.**
-    <pre><script src='https://unpkg.com/kova.js@1.0.1/dist/maths.js'></script></pre>
+    <pre><script src='https://unpkg.com/kova.js@1.0.1/dist/kova.umd.js'></script></pre>

@@ -1,6 +1,7 @@
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import pkg from './package.json';
+import { terser } from "rollup-plugin-terser";
 
 export default [
     {
@@ -12,14 +13,28 @@ export default [
         },
         plugins: [
             resolve(),
-            commonjs()
+            commonjs(),
+            terser()
         ]
     },
     {
         input: 'maths.js',
-        output: [
-            { file: pkg.main, format: 'cjs' },
-            { file: pkg.module, format: 'es' }
+        output: {
+            file: pkg.main, 
+            format: 'cjs' 
+        },
+        plugins: [
+            terser()
+        ]
+    },
+    {
+        input: 'maths.js',
+        output: {
+            file: pkg.module, 
+            format: 'es' 
+        },
+        plugins: [
+            terser()
         ]
     }
 ];
