@@ -1,13 +1,15 @@
 {
   "name": "kova.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Super light weight math library designed for writing complex but readable equations.",
+  "keywords": ["math", "precision", "decimal", "floating-point"],
   "repository": {
     "type": "git",
     "url": "https://github.com/stephenthecurt/kova.js.git"
   },
   "author": "Stephen Curtis",
   "contributors": [
+    "Stephen Curtis",
     "Lauren Pease <lauren@laurenpease.com>"
   ],
   "license": "MIT",
@@ -37,6 +39,7 @@
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^10.0.0",
     "rollup-plugin-node-resolve": "^5.0.1",
+    "rollup-plugin-terser": "^5.0.0",
     "xml2js-es6-promise": "^1.1.1",
     "xmldom": "^0.1.27"
   },
