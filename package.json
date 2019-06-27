@@ -2,6 +2,7 @@
   "name": "kova.js",
   "version": "1.0.2",
   "description": "Super light weight math library designed for writing complex but readable equations.",
+  "keywords": ["math", "precision", "decimal", "floating-point"],
   "repository": {
     "type": "git",
     "url": "https://github.com/stephenthecurt/kova.js.git"
