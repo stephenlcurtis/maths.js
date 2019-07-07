@@ -1,4 +1,4 @@
-import {DECIMALS, add, subtract, multiply, divide} from '../src/maths.js';
+import {DECIMALS, add, subtract, multiply, divide} from '../src/kova.js';
 import {expect} from 'chai';
 import rp from 'request-promise';
 import {DOMParser} from 'xmldom';

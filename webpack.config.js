@@ -5,9 +5,9 @@ var dir_js = path.resolve(__dirname, 'src');
 var dir_dist = path.resolve(__dirname, 'dist');
 
 module.exports = {
-    entry: path.resolve(dir_js, 'maths.js'),
+    entry: path.resolve(dir_js, 'kova.js'),
     output: {
-        filename: 'maths.js',
+        filename: 'kova.js',
         path: dir_dist
     },
     module: {
@@ -21,7 +21,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'maths.js'
+            title: 'kova.js'
         })
     ],
     devtool: 'source-map',

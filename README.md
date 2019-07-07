@@ -1,5 +1,7 @@
-# maths.js
+# kova.js
 Super light weight math library designed for writing complex but readable equations.
+
+[![License](https://img.shields.io/npm/l/kova.js.svg)](https://github.com/stephenthecurt/kova.js/blob/master/LICENSE)
 
 ```diff
 + floating point math error correction
@@ -10,4 +12,4 @@ Super light weight math library designed for writing complex but readable equati
 - big number support 
 - normalize mantissa 
 - teach you math
-```
+``` 

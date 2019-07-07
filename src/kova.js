@@ -1,5 +1,5 @@
 /**
- * @module Maths
+ * @module Kova
  */
 
 /**
@@ -78,19 +78,19 @@ const bigify = (value, decimals = DECIMALS) => value * Math.pow(10, decimals);
 const smallify = (value, decimals = DECIMALS) => value / Math.pow(10, decimals);
 
 /**
- * Parses result of {@link Maths#bigify} as an integer.
+ * Parses result of {@link Kova#bigify} as an integer.
  * @param {number} value
  * @param {number} [decimals]
  * @return {number}
  */
-const bigifyToInt = pipe(bigify, parseIntUnary);
+const bigifyToInt = (value, decimals) => Number.parseInt(bigify(value, decimals));
 /**
- * Parses result of {@link Maths#smallify} as an integer.
+ * Parses result of {@link Kova#smallify} as an integer.
  * @param {number} value
  * @param {number} [decimals]
  * @return {number}
  */
-const smallifyFromInt = pipe(parseIntUnary, smallify);
+const smallifyFromInt = (value, decimals) => smallify(Number.parseInt(value), decimals);
 /**
  * Returns given value to specified decimal accuracy.
  * @param {number} value
@@ -100,14 +100,14 @@ const smallifyFromInt = pipe(parseIntUnary, smallify);
 const precise = pipe(bigifyToInt, smallifyFromInt);
 
 /**
- * Finds {@link Maths#Decimals} in arguments and prepends to front of arguments list.
+ * Finds {@link Kova#Decimals} in arguments and prepends to front of arguments list.
  * @param {function} fn
  * @return {function(number, ...number)}
  */
 const decimalify = fn => {
     return (...values) => {
         const symbol = values.find(value => typeof value === 'symbol');
-        const decimals = Object.keys(Decimals).find(key => Decimals[key] === symbol);
+        const decimals = Number.parseInt(Object.keys(Decimals).find(key => Decimals[key] === symbol));
         values = values.filter(value => typeof value !== 'symbol');
         return Reflect.apply(fn, null, [decimals, ...values]);
     };
@@ -124,7 +124,7 @@ export const plus = curry((decimals, a, b) => smallifyFromInt(bigifyToInt(a, dec
  * Maintain decimal accuracy while performing addition operation, correcting for floating point arithmetic errors.
  * One argument returns arg+0
  * Two or more arguments returns arg1+arg2+...^arg(n)
- * @param {Maths#Decimals} [decimals]
+ * @param {Kova#Decimals} [decimals]
  * @param {...number} values
  * @returns {number}
  */
@@ -141,7 +141,7 @@ export const minus = curry((decimals, a, b) => smallifyFromInt(bigifyToInt(a) - 
  * Maintain decimal accuracy while performing subtraction operation, correcting for floating point arithmetic errors.
  * One argument returns arg-0
  * Two or more arguments returns arg1-arg2-...^arg(n)
- * @param {Maths#Decimals} [decimals]
+ * @param {Kova#Decimals} [decimals]
  * @param {...number} values
  * @returns {number}
  */
@@ -158,7 +158,7 @@ export const times = curry((decimals, a, b) => smallifyFromInt(bigifyToInt(a, de
  * Maintain decimal accuracy while performing multiplication operation, correcting for floating point arithmetic errors.
  * One argument returns arg*1
  * Two or more arguments returns arg1*arg2*...^arg(n)
- * @param {Maths#Decimals} [decimals]
+ * @param {Kova#Decimals} [decimals]
  * @param {...number} values
  * @returns {number}
  */
@@ -175,7 +175,7 @@ export const over = curry((decimals, a, b) => smallifyFromInt(bigifyToInt(a, dec
  * Maintain decimal accuracy while performing division operation, correcting for floating point arithmetic errors.
  * One argument returns arg/1
  * Two or more arguments returns arg1/arg2/...^arg(n)
- * @param {Maths#Decimals} [decimals]
+ * @param {Kova#Decimals} [decimals]
  * @param {...number} values
  * @returns {number}
  */
@@ -192,7 +192,7 @@ export const exp = curry((decimals, a, b) => precise(a ** precise(b, decimals), 
  * Maintain decimal accuracy while performing power operation.
  * One argument returns arg^1 power
  * Two or more arguments returns arg1^arg2...^arg(n) power
- * @param {Maths#Decimals} [decimals]
+ * @param {Kova#Decimals} [decimals]
  * @param {...number} values
  * @returns {number}
  */
