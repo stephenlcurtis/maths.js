@@ -113,6 +113,7 @@ const decimalify = fn => {
     };
 };
 
+
 /**
  * Returns sum of given arguments to a specified accuracy.
  * @param {number} [decimals]
@@ -136,7 +137,7 @@ export const add = decimalify((decimals, ...values) => values.reduce((acc, cur) 
  * @param {number} b
  * @returns {number}
  */
-export const minus = curry((decimals, a, b) => smallifyFromInt(bigifyToInt(a) - bigifyToInt(b), decimals));
+export const minus = curry((decimals, a, b) => smallifyFromInt(bigifyToInt(a, decimals) - bigifyToInt(b, decimals), decimals));
 /**
  * Maintain decimal accuracy while performing subtraction operation, correcting for floating point arithmetic errors.
  * One argument returns arg-0
@@ -170,7 +171,7 @@ export const multiply = decimalify((decimals, ...values) => values.reduce((acc, 
  * @param {number} b
  * @returns {number}
  */
-export const over = curry((decimals, a, b) => smallifyFromInt(bigifyToInt(a, decimals) / precise(b, decimals), decimals));
+const over = curry((decimals, a, b) => smallifyFromInt(bigifyToInt(a, decimals) / smallifyFromInt(bigifyToInt(b, decimals), decimals), decimals));
 /**
  * Maintain decimal accuracy while performing division operation, correcting for floating point arithmetic errors.
  * One argument returns arg/1
@@ -187,7 +188,7 @@ export const divide = decimalify((decimals, ...values) => values.reduce((acc, cu
  * @param {number} b
  * @returns {number}
  */
-export const exp = curry((decimals, a, b) => precise(a ** precise(b, decimals), decimals));
+export const exp = curry((decimals, a, b) => smallifyFromInt(bigifyToInt(a ** smallifyFromInt(bigifyToInt(b, decimals), decimals), decimals), decimals));
 /**
  * Maintain decimal accuracy while performing power operation.
  * One argument returns arg^1 power
