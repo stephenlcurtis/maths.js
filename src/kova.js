@@ -171,7 +171,7 @@ export const multiply = decimalify((decimals, ...values) => values.reduce((acc, 
  * @param {number} b
  * @returns {number}
  */
-const over = curry((decimals, a, b) => smallifyFromInt(bigifyToInt(a, decimals) / smallifyFromInt(bigifyToInt(b, decimals), decimals), decimals));
+export const over = curry((decimals, a, b) => smallifyFromInt(bigifyToInt(a, decimals) / smallifyFromInt(bigifyToInt(b, decimals), decimals), decimals));
 /**
  * Maintain decimal accuracy while performing division operation, correcting for floating point arithmetic errors.
  * One argument returns arg/1
