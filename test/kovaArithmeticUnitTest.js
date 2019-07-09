@@ -1,6 +1,5 @@
 import {DECIMALS, add, subtract, multiply, divide, pow, e2, e3, inv, neg, delta} from '../src/kova.js';
 import {expect} from 'chai';
-import {Promise} from 'bluebird';
 
 describe('Precision', () => {
     it('operations should result in a number', () => {
