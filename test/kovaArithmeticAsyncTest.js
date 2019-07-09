@@ -17,7 +17,8 @@ const transform = response => {
     return parseFloat(result);
 };
 
-describe('Verify Binary',() => {
+describe('Verify Binary', function () {
+    this.timeout(10000);
     it('binary floating point error correction operations results should match decimal results', done => {
 
         const a = 1.12345;
@@ -41,7 +42,8 @@ describe('Verify Binary',() => {
     });
 });
 
-describe('Verify Ternary', () => {
+describe('Verify Ternary', function () {
+    this.timeout(10000);
     it('ternary floating point error correction operations results should match decimal results', done => {
 
         const a = 1.12345;

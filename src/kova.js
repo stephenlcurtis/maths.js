@@ -154,7 +154,7 @@ export const subtract = decimalify((decimals, ...values) => values.reduce((acc, 
  * @param {number} b
  * @returns {number}
  */
-export const times = curry((decimals, a, b) => smallifyFromInt(bigifyToInt(a, decimals) * precise(b, decimals), decimals));
+export const times = curry((decimals, a, b) => smallifyFromInt(bigifyToInt(a, decimals) * smallifyFromInt(bigifyToInt(b, decimals), decimals), decimals));
 /**
  * Maintain decimal accuracy while performing multiplication operation, correcting for floating point arithmetic errors.
  * One argument returns arg*1
