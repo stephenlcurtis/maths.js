@@ -31,7 +31,6 @@ Super light weight math library designed for writing complex but readable equati
 ## Usage  
 
 ```javascript
-
 // floating point math error 
 
 0.1 + 0.2; // => 0.30000000000000004
